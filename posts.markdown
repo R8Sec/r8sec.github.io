@@ -1,0 +1,3 @@
+# Posts
+
+{% include posts.html %}

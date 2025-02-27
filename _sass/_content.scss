@@ -1,0 +1,36 @@
+/* Styles for main content of the page */
+.content {
+    background-color: #141e25;
+    color: #c0ffee;
+    width: 90%;
+    margin: 0 auto;
+    flex: 1;
+}
+
+.content h1 {
+    color: #3ec579;
+}
+
+.content h2 {
+    color: #3ec579;
+}
+
+.content p {
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.content a {
+    color: #3ec579;
+    text-decoration: none;
+}
+
+.content a:hover {
+    color: #6d09ff;
+}
+
+@media (min-width: 600px) {
+    .content {
+        width: 60%;
+    }
+}
