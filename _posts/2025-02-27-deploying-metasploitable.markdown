@@ -1,3 +1,6 @@
+---
+layout: article
+---
 # Deploying Metasploitable
 
 ## What is Metasploitable?
