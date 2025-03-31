@@ -1,5 +1,7 @@
 ---
 layout: article
+title: "Deploying Metasploitable"
+excerpt: "In order to learn and practise pentesting, we need something to attack and fiddle with. Let's see how to deploy Metasploitable, an intentionally vulnerable machine where we can safely practise our skills."
 ---
 # Deploying Metasploitable
 

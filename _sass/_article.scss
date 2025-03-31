@@ -1,54 +1,55 @@
 /* Main article styles */
+@import "variables";
+
 article {
-    background-color: #141e25;
-    color: #c0ffee;
+    background-color: $r8-primary;
+    color: $color-primary-text;
 }
 
 article h1 {
     font-size: 2.1em;
-    color: #3ec579;
+    color: $r8-accent;
 }
 
 article h2 {
-    color: #3ec579;
+    color: $r8-accent;
     margin-top: 2em;
 }
 
 article h3 {
     margin-top: 1em;
-    color: #3ec579;
+    color: $r8-accent;
 }
 
 article p {
-    color: #c0ffee;
+    color: $color-primary-text;
     margin-top: 1em;
     margin-bottom: 0;
 }
 
 article a {
-    color: #3ec579;
+    color: $r8-accent;
     text-decoration: none;
 }
 
 article a:hover {
-    color: #6d09ff;
+    color: $color-hover;
 }
 
 article pre {
     font-family: 'Source Code Pro', monospace;
-    background-color: #1f2a33;
-    color: #c0ffff;
+    background-color: $r8-secondary;
     padding: 1em;
     border-radius: 4px;
     overflow-x: auto;
-    margin: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
     white-space: pre-wrap;
 }
 
 article code {
     font-family: 'Source Code Pro', monospace;
-    color:   #808b96 ;
-    font-size: 0.9em;
+    color: $color-secondary-text;
 }
 
 article ol {

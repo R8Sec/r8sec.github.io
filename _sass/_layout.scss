@@ -1,4 +1,6 @@
 /* Container for the content and the nav */
+@import "variables";
+
 html, body {
     display: flex;
     flex-direction: column;
@@ -18,8 +20,8 @@ main {
 
 /* Footer styles */
 footer {
-    background: #1f2a33;
-    color: #808b96;
+    background: $r8-secondary;
+    color: $color-secondary-text;
     text-align: center;
     width: 100vw;
     padding: 20px;

@@ -1,9 +1,10 @@
 ---
 ---
+@import "variables";
 @import "reset";
-@import "layout";
-@import "typography";
+@import "article";
 @import "content";
+@import "layout";
 @import "navigation";
 @import "posts";
-@import "article";
+@import "typography";

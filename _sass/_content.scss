@@ -1,7 +1,9 @@
 /* Styles for main content of the page */
+@import "variables";
+
 .content {
-    background-color: #141e25;
-    color: #c0ffee;
+    background-color: $r8-primary;
+    color: $color-primary-text;
     width: 90%;
     margin: 0 auto;
     flex: 1;
