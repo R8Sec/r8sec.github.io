@@ -29,7 +29,6 @@ article p {
 
 article a {
     color: $r8-accent;
-    text-decoration: none;
 }
 
 article a:hover {
@@ -49,9 +48,30 @@ article pre {
 
 article code {
     font-family: 'Source Code Pro', monospace;
+    background-color: $r8-secondary;
+    padding: 1px;
+    border-radius: 4px;
     color: $color-secondary-text;
 }
 
 article ol {
     margin: 2em;
+}
+
+article ul {
+    margin: 2em;
+}
+
+article img {
+    width: 70%;
+    display: block;
+    margin: auto;
+}
+
+@media (max-width: 768px) {
+    article img {
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
 }
