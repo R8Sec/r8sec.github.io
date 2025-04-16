@@ -114,3 +114,16 @@ When scanning targets, we will want to save the results for future reference. Nm
 - XML output: with `-oX`, Nmap saves the output in XML format.
 - Grepable output: with `-oG`, Nmap saves the output in a simple format that lists each host on one line. This is helpful for later parsing the output with tools such as `grep`, `awk`, `cut`, `sed`, etc.
 - All formats: When using the `-oA` flag, Nmap saves output in the three previous formats
+
+For example:
+
+```bash
+sudo nmap -sV -oA results <TARGET>
+```
+
+This will produce `results.nmap`, `results.xml`, and `results.gnmap` files containing the scan data.
+
+## Conclusion
+Nmap is an incredibly versatile tool that goes beyond simple host discovery and port scanning. By combining different scan types, specifying custom ports, leveraging the scripting engine, and saving detailed output in various formats, you can build a solid foundation for network reconnaissance and vulnerability assessment.
+
+I hope to cover more Nmap in the future, but for now, you can continue exploring the possibilities by reading the [official Nmap documentation](https://nmap.org/book/man.html) and experimenting with different scripts, scan options, and advanced features. Remember: always use Nmap responsibly and only scan networks you have explicit permission to test. Happy scanning!
