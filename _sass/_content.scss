@@ -1,0 +1,53 @@
+/* Styles for main content of the page */
+@import "variables";
+
+.content {
+    background-color: $r8-primary;
+    color: $color-primary-text;
+    width: 90%;
+    margin: 0 auto;
+    flex: 1;
+}
+
+.content h1 {
+    color: #3ec579;
+}
+
+.content h2 {
+    color: #3ec579;
+}
+
+.content p {
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.content a {
+    color: #3ec579;
+    text-decoration: none;
+}
+
+.content a:hover {
+    color: #6d09ff;
+}
+
+.content blockquote {
+  font-style: italic;
+  font-size: 15px;
+  color: $color-secondary-text;
+  border-left: 4px solid $r8-accent;
+  padding: 0.5em 1em;
+  margin: 3em 0;
+  background: $r8-secondary;
+}
+
+.content blockquote p {
+  color: #69868e;
+  margin: 0;
+}
+
+@media (min-width: 600px) {
+    .content {
+        width: 60%;
+    }
+}

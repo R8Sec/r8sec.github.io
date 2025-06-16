@@ -1,0 +1,76 @@
+/* Main article styles */
+@import "variables";
+
+article {
+    background-color: $r8-primary;
+    color: $color-primary-text;
+}
+
+article h1 {
+    font-size: 2.1em;
+    color: $r8-accent;
+}
+
+article h2 {
+    color: $r8-accent;
+    margin-top: 2em;
+}
+
+article h3 {
+    margin-top: 1em;
+    color: $r8-accent;
+}
+
+article p {
+    color: $color-primary-text;
+    margin-top: 1em;
+    margin-bottom: 0;
+}
+
+article a {
+    color: $r8-accent;
+}
+
+article a:hover {
+    color: $color-hover;
+}
+
+article code {
+    font-family: 'Source Code Pro', monospace;
+    color: $color-codeblock-text;
+    background-color: $color-codeblock;
+    padding: 1px 7px;
+    border-radius: 4px;
+}
+
+.highlight {
+    background-color: $color-codeblock;
+    margin: 0.5em;
+    border-radius: 4px;
+    overflow-x: auto;
+    white-space: pre;
+    code {
+      font-family: 'Source Code Pro', monospace;
+      font-size: 16px;
+      color: $color-codeblock-text;
+      padding: 0;
+    }
+}
+
+article ol, article ul, article li {
+    margin: 1em;
+}
+
+article img {
+    width: 70%;
+    display: block;
+    margin: auto;
+}
+
+@media (max-width: 768px) {
+    article img {
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+}

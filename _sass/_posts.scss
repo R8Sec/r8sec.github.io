@@ -1,0 +1,34 @@
+/* Styles for post list */
+@import "variables";
+
+.post {
+    margin-top: 1em;
+    margin-left: 0;
+    padding: 1.5rem;
+    border-radius: 6px;
+    background-color: $r8-secondary;
+}
+
+.post h2 {
+    margin-top: 0;
+}
+
+.post p {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+.post p.date {
+    margin: 0;
+    font-size: 0.8em;
+    color: $color-secondary-text;
+}
+
+.post a {
+    color: $r8-accent;
+    text-decoration: none;
+}
+
+.post a:hover {
+    color: $color-hover;
+}

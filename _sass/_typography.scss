@@ -1,0 +1,14 @@
+@import "variables";
+
+body {
+    font-family: 'Fira Code', monospace;
+    font-size: 18px;
+    line-height: 1.6;
+    color: $color-primary-text;
+    background-color: $r8-primary;
+}
+
+h2 {
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+}

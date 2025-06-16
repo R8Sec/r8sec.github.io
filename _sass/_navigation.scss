@@ -1,0 +1,109 @@
+/* Navigation menu styles */
+@import "variables";
+
+.top-nav {
+    background: $r8-primary;
+    color: $color-primary-text;
+    display: flex;
+    width: 100vw;
+    height: 80px;
+    align-items: center;
+    position: fixed;
+    border-bottom: 0.18em solid $r8-secondary;
+    transition: top 0.5s ease;
+}
+
+.home-button {
+    background: $r8-secondary;
+    color: $r8-accent;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 140px;
+    font-weight: bold;
+    font-size: 3.3em;
+    text-decoration: none;
+    transition: color 4s ease, background 4.1s ease;
+}
+
+.home-button:hover {
+    background-color: $r8-accent;
+    color: $r8-secondary;
+}
+
+.nav-links {
+    display: flex;
+    margin-left: 33vw; /* Moves navlinks to middle */
+}
+
+.nav-links a {
+    color: $color-primary-text;
+    font-size: 1.2em;
+    text-decoration: none;
+    height: 80px;
+    padding: 25px; /* Centers text */
+    transition: background 1s ease;
+}
+
+.nav-links a:hover {
+    background: $r8-secondary;
+}
+
+/* Mobile menu toggle */
+.menu-toggle {
+    display: none;
+    position: absolute;
+    top: -11px;
+    right: 0;
+    flex-direction: column;
+    cursor: pointer;
+    margin: 30px;
+}
+
+.menu-toggle .bar {
+    height: 4px;
+    width: 35px;
+    background-color: $r8-accent;
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .top-nav {
+        flex-direction: column;
+        justify-content: flex-start;
+        transition: top 0.5s ease;
+    }
+    
+    .top-nav.expanded {
+        height: 38vh; /* Height of the container containing the links */
+    }
+    
+    .home-button {
+        width: 100%;
+        height: 80px;
+        justify-content: center;
+    }
+    
+    .nav-links {
+        display: none;
+        margin-right: 33vw;
+    }
+    
+    .nav-links.expanded {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .nav-links a {
+        width: 100%; /* Full width for each link */
+        padding: 30px; /* Increased padding for touch targets */
+        text-align: center; /* Center text */
+    }
+    
+    .menu-toggle {
+        display: flex;
+    }
+}
